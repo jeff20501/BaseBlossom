@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link href="./style.css" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title> Base Apparel coming soon page</title>
+</head>
+<body>
+  <section class=" wrapper">
+    <img class="logo" src="./images/logo.svg">
+    <picture>
+      <source class="hero-mobile" srcset="./images/hero-mobile.jpg" media="(width < 768px)">
+      <img>
+    </picture>
+    <section class="info">
+      <div class="h1">
+       <h1><span class="first-letter">We're</span> coming soon</h1>
+      </div>
+      <p>
+        Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.
+      </p>
+
+      <form action="" class="input-field">
+        <div class="input-container">
+          <input type="email" id="email" placeholder="Email Address" required>
+          <label class="icon-error" for="email">
+            <img id="error-icon" alt="error icon" style="display: none;">
+          </label>
+
+          <button type="submit" class="button">
+            <img class="arrow" src="./images/icon-arrow.svg" alt="arrow">
+          </button>
+        </div>
+      </form>
+      <p class="error"></p>
+    </section>
+  </section>
+
+  <section class="hero-image">
+      <img src="./images/hero-desktop.jpg" alt="hero image">
+    </section>
+
+  <script src="./script.js"></script>
+</body>
+</html>

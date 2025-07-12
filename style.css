@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    box-sizing: border-box;   
+}
+
+body{
+    font-family: 'Josefin Sans';
+    font-size: 1.3rem;
+    max-inline-size: 1440px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr;
+    justify-content: space-between;
+}
+
+.h1{
+    text-align: center;
+    max-inline-size: 350px;
+    margin: 0 auto;
+    margin-top: 100px;
+    letter-spacing: 6px;
+    font-size: 4rem;
+    font-weight: 500;
+    color:hsl(0, 6%, 24%);
+    text-transform: uppercase;
+    word-spacing: 5px;
+    @media (width<768px){
+        font-size: 2rem;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+img{
+    display: block;
+    max-inline-size: 100%;
+}
+
+.wrapper{
+    margin: 0 auto;
+    justify-content: space-between;
+
+}
+
+
+.logo{
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.first-letter{
+    color:hsl(0, 36%, 70%);
+    font-weight: 350;
+    margin: 0 auto;
+}
+
+.info{
+    font-weight: 600;
+    word-spacing: 2px;
+    max-inline-size: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    color: hsl(0, 36%, 70%);
+    @media (width<768px){
+        font-size: 0.8rem
+    }
+
+}
+
+.input-field{
+    display: flex;
+
+}
+
+input {
+    font-family: inherit;
+    font-size: 1.3rem;
+    max-inline-size: 350px;
+    padding: 12px 20px; /* extra right padding to give space for button */
+    border-radius: 30px;
+    border: 2.7px solid transparent;
+    background: linear-gradient(white, white) padding-box,
+                linear-gradient(135deg, hsl(0, 80%, 86%),  hsl(0, 74%, 74%));
+    border-radius: 20px;
+    @media (width<768px){
+        max-inline-size: 210px;
+        font-size: 0.8rem;
+    }
+}
+
+
+input::placeholder{
+    color: hsl(0, 36%, 70%);
+}
+
+input:hover:focus{
+    border: solid hsl(0, 93%, 68%);
+}
+
+.input-container {
+  max-inline-size: 300px;
+  position: relative; /* Needed for absolute positioning the button inside */
+}
+
+label{
+    position: absolute;
+    right: 66px;
+    top:10px;
+}
+
+.button {
+  position: absolute;
+  right: 0px; /* position from the right edge inside input */
+  top: 50%;
+  transform: translateY(-50%);
+  inline-size: 59px;
+  block-size: 44px;
+  border: none;
+  border-radius: 20px;
+  background-color: hsl(0, 36%, 70%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media(width<768px){
+    max-inline-size: 45px;
+  }
+}
+
+.button:hover{
+    background-color: hsl(0, 93%, 68%);
+    cursor: pointer;
+    box-shadow: 10px 10px 20px hsl(0, 36%, 70%);
+}
+
+.arrow{
+    inline-size: 11px;
+}
+
+.error{
+    color: hsl(0, 74%, 74%);
+
+}
+
+.hero-image{
+    max-inline-size: 500px;
+    @media (width<768px){
+        display: none;
+    }
+}
+
+.hero-mobile{
+    max-inline-size: 370px;
+}
+
+
